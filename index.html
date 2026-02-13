@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Sneha 💖</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Start Screen Overlay -->
+  <div id="start-overlay">
+    <div class="heart-icon">💌</div>
+    <h1>For Sneha...</h1>
+    <p>Tap to open your surprise ✨</p>
+  </div>
+
+  <!-- Music Control Button (Initially hidden) -->
+  <div id="music-control" onclick="toggleMusic()" style="display:none;">🎵</div>
+
+  <div class="container">
+
+    <!-- Landing Section -->
+    <section id="landing" class="card">
+      <h1 id="landing-title">Hi Sneha 🌸</h1>
+      <p id="landing-subtitle">I made something special for you…</p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">(scroll slowly… this is a tiny journey)</p>
+      <div class="scroll-arrow">↓</div>
+    </section>
+
+    <!-- Memories Section -->
+    <section id="memories">
+      <!-- Cards will be injected by JS -->
+    </section>
+
+    <!-- Mini Game Section -->
+    <section id="game-section" class="card memory-card">
+      <h2>Let's Play a Game 🎮</h2>
+      <p>Catch 5 floating hearts to unlock your surprise!</p>
+      <p id="score-display">Hearts Collected: 0 / 5</p>
+      <div id="game-area">
+        <!-- Hearts will float here -->
+      </div>
+    </section>
+
+    <!-- Final Proposal Section -->
+    <section id="proposal">
+      <div class="card" style="border: 2px solid #ff9aa2; box-shadow: 0 0 20px rgba(255, 154, 162, 0.4);">
+        <h1 id="proposal-heading">Sneha...</h1>
+        <p id="proposal-text" style="font-size: 1.3rem; margin: 1.5rem 0;">Will you be my girlfriend? 💗</p>
+
+        <div class="btn-group">
+          <button id="btn-yes">YES 💖</button>
+          <button id="btn-no">NO 🙈</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      made with a lot of courage and a little nervousness 😳
+    </footer>
+
+  </div>
+
+  <!-- Celebration Overlay -->
+  <div id="celebration">
+    <h1>You said YES! 🎉</h1>
+    <p>You just made me the happiest boy alive 💫</p>
+    <div style="font-size: 5rem; margin-top: 2rem;">💑</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
